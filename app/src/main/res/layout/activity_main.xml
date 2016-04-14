@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="temps"
+        android:id="@+id/temps"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bienvenue Elsa !"
+        android:id="@+id/nom"
+        android:layout_below="@+id/temps"
+        android:layout_centerHorizontal="true"
+        android:textSize="20px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/nom"
+        android:layout_toRightOf="@+id/nom"
+        android:layout_toEndOf="@+id/nom"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="800px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/base">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="250px"
+            android:layout_height="match_parent"
+            android:id="@+id/recipient_1"
+            android:layout_marginLeft="30px"
+            android:paddingBottom="10px"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="250px"
+            android:layout_height="match_parent"
+            android:id="@+id/recipient_2"
+            android:layout_marginLeft="30px"
+            android:paddingBottom="10px"></LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
